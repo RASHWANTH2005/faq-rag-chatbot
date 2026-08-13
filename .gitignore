@@ -1,0 +1,4 @@
+.env
+chroma_db
+bot_env
+src/__pycache__/
