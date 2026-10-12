@@ -2,3 +2,4 @@
 chroma_db
 bot_env
 src/__pycache__/
+eval_results.csv

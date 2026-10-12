@@ -23,15 +23,26 @@ judge_llm = ChatGoogleGenerativeAI(
     google_api_key=os.getenv("GOOGLE_API_KEY")
 )
 
-judge_embeddings = OllamaEmbeddings(
-            model="nomic-embed-text",
-            base_url="http://localhost:11434"
-        )
+#NOTE :: embeddings are not needed for these metrics 
+
+# judge_embeddings = OllamaEmbeddings(
+#             model="nomic-embed-text",
+#             base_url="http://localhost:11434"
+#         )   
 
 
 
 def run_evaluation() -> pd.DataFrame:
-    ...
+
+    with open("data/evaluation_dataset.json", "r", encoding="utf-8") as f:
+        records = json.load(f)
+
+    # limit = int(os.getenv("EVAL_LIMIT", "0"))   # optional smoke-test slice
+    # if limit:
+    #     records = records[:limit]
+
+    evaluation_dataset = EvaluationDataset.from_list(records)
+    BATCH_SIZE = 4
     batch_frames = []
 
     for start in range(0, len(evaluation_dataset), BATCH_SIZE):
@@ -48,7 +59,7 @@ def run_evaluation() -> pd.DataFrame:
                 LLMContextPrecisionWithReference(),
             ],
             llm=LangchainLLMWrapper(judge_llm),
-            embeddings=LangchainEmbeddingsWrapper(judge_embeddings),
+            # embeddings=LangchainEmbeddingsWrapper(judge_embeddings), 
             run_config=RunConfig(max_workers=1, timeout=180),
         )
 
@@ -61,4 +72,7 @@ def run_evaluation() -> pd.DataFrame:
             print(f"Waiting {wait_time:.2f} seconds...")
             time.sleep(wait_time + 2)
 
-    return pd.concat(batch_frames, ignore_index=True)
+    df = pd.concat(batch_frames, ignore_index=True)
+    print(df.columns.tolist())
+    df.to_csv("eval_results.csv", index=False)
+    return df
