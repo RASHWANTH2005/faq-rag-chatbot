@@ -1,33 +1,30 @@
-import json
-from dotenv import load_dotenv
-from langchain_core.documents import Document
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_ollama import OllamaEmbeddings
 from langchain_chroma import Chroma
 
-load_dotenv()
+from data_loader import load_documents
+
+
+CHROMA_DIR = "./chroma_db"
 
 
 def ingest():
-    with open("data/faqs.json") as f:
-        faqs = json.load(f)
 
-    docs = [
-        Document(
-            page_content=f"Question: {faq['question']}",
-            metadata={"answer": faq["answer"]}
-        )
-        for faq in faqs[50:100]
-    ]
+    docs = load_documents()
 
-    embeddings = GoogleGenerativeAIEmbeddings(
-        model="gemini-embedding-001"
+    print(f"Loaded {len(docs)} documents")
+
+    embeddings = OllamaEmbeddings(
+        model="nomic-embed-text",
+        base_url="http://localhost:11434"
     )
 
     Chroma.from_documents(
-        docs,
-        embeddings,
-        persist_directory="./chroma_db"
+        documents=docs,
+        embedding=embeddings,
+        persist_directory=CHROMA_DIR
     )
+
+    print("ChromaDB ingestion completed")
 
 
 if __name__ == "__main__":

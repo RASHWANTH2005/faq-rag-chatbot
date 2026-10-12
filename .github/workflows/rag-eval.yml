@@ -1,0 +1,43 @@
+# name: RAG Evaluation CI
+
+# on:
+# push:
+# pull_request:
+
+# permissions:
+# contents: read
+
+# jobs:
+# ragas-evaluation:
+# name: Live RAGAS Evaluation
+# runs-on: ubuntu-latest
+
+# ```
+# if: >-
+#   github.event_name == 'push' ||
+#   github.event.pull_request.head.repo.full_name == github.repository
+
+# env:
+#   GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+#   GROQ_MODEL: openai/gpt-oss-20b
+
+# steps:
+#   - name: Checkout repository
+#     uses: actions/checkout@v4
+
+#   - name: Set up Python
+#     uses: actions/setup-python@v5
+#     with:
+#       python-version: "3.11"
+#       cache: pip
+#       cache-dependency-path: requirements.txt
+
+#   - name: Install dependencies
+#     run: |
+#       python -m pip install --upgrade pip
+#       pip install -r requirements.txt
+#       pip install pytest
+
+#   - name: Run live RAGAS evaluation
+#     run: pytest -m live_eval -v
+# ```

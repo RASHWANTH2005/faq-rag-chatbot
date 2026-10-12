@@ -1,0 +1,198 @@
+[
+  {
+    "question": "How can I create an account?",
+    "ground_truth": "You sign up through the Sign Up button on the site and complete the registration steps."
+  },
+  {
+    "question": "Can I place an order without creating an account?",
+    "ground_truth": "Yes, guest checkout is allowed, though having an account gives perks like easier tracking and faster checkout."
+  },
+  {
+    "question": "I forgot my password. How do I get back into my account?",
+    "ground_truth": "Use the Forgot Password link on the login page and follow the reset instructions."
+  },
+  {
+    "question": "Where can I change my personal account details?",
+    "ground_truth": "Log in, go to Account Settings, and edit your personal details there."
+  },
+  {
+    "question": "How is my personal information protected?",
+    "ground_truth": "Yes, industry-standard encryption and other security measures are used to protect account and personal info."
+  },
+  {
+    "question": "Which payment methods can I use?",
+    "ground_truth": "Major credit/debit cards and PayPal are accepted."
+  },
+  {
+    "question": "Why did my payment get rejected?",
+    "ground_truth": "Declines usually come from insufficient funds, wrong card details, bank restrictions, or security checks; contact your payment provider if it keeps happening."
+  },
+  {
+    "question": "Can I change the payment method after placing an order?",
+    "ground_truth": "Usually not once the order is processed, but support can be contacted quickly to see if an exception is possible."
+  },
+  {
+    "question": "Where do I find the tracking information for my order?",
+    "ground_truth": "Log into your account and check Order History for tracking info."
+  },
+  {
+    "question": "How many days does normal shipping usually take?",
+    "ground_truth": "Roughly 3 to 5 business days depending on destination."
+  },
+  {
+    "question": "Is there a faster shipping option?",
+    "ground_truth": "Yes, for eligible orders, with options and estimates shown at checkout."
+  },
+  {
+    "question": "Can you ship orders to other countries?",
+    "ground_truth": "Yes, to select countries, with cost and availability calculated at checkout."
+  },
+  {
+    "question": "I entered the wrong delivery address. Can it still be changed?",
+    "ground_truth": "Possible if the order hasn't shipped yet — contact support right away."
+  },
+  {
+    "question": "Why is my order taking so long to ship?",
+    "ground_truth": "Delays can be due to payment verification, stock availability, or high order volume."
+  },
+  {
+    "question": "My package seems to be lost. What should I do?",
+    "ground_truth": "Contact support with your order and tracking details so they can investigate with the carrier."
+  },
+  {
+    "question": "Can I cancel an order I just placed?",
+    "ground_truth": "Yes, if it hasn't shipped yet — request it quickly through support."
+  },
+  {
+    "question": "Can I add another item to an order I already placed?",
+    "ground_truth": "Generally not once processing has begun; a separate order is usually needed."
+  },
+  {
+    "question": "I accidentally placed the same order twice. What should I do?",
+    "ground_truth": "Contact support right away with both order numbers so one can potentially be cancelled before it ships."
+  },
+
+  {
+    "question": "Can I return something simply because I changed my mind?",
+    "ground_truth": "Yes, as long as it's eligible, in original condition, and within the return window."
+  },
+  {
+    "question": "Do I need proof of purchase to return an item?",
+    "ground_truth": "Proof of purchase is generally required; contact support if you've lost your receipt."
+  },
+  {
+    "question": "Are final-sale items eligible for returns?",
+    "ground_truth": "No, final sale items are normally non-returnable and non-refundable unless stated otherwise."
+  },
+  {
+    "question": "What happens if I receive a defective product?",
+    "ground_truth": "Yes — contact support, and depending on the issue they may offer a repair, replacement, or refund."
+  },
+  {
+    "question": "Where will my refund be sent?",
+    "ground_truth": "Refunds generally go back to the original payment method used."
+  },
+  {
+    "question": "Can I exchange something instead of getting a refund?",
+    "ground_truth": "Exchanges may be available for eligible items — check with support."
+  },
+  {
+    "question": "Can I return something that I originally paid for with a gift card?",
+    "ground_truth": "Yes, typically refunded as store credit or a new gift card rather than cash."
+  },
+  {
+    "question": "What happens if the price drops shortly after I purchase something?",
+    "ground_truth": "A one-time price adjustment may be possible if the drop happens within 7 days of purchase."
+  },
+  {
+    "question": "How long do I normally have to return a product?",
+    "ground_truth": "Items can typically be returned within 30 days if they're in original condition and packaging."
+  },
+
+  {
+    "question": "Where do I enter a promotional discount during checkout?",
+    "ground_truth": "Enter it in the promo code field at checkout before completing the purchase."
+  },
+  {
+    "question": "My promo code isn't working. What should I check?",
+    "ground_truth": "Check the expiration date and eligibility terms first; contact support if it should still be valid."
+  },
+  {
+    "question": "Can I combine two discount codes on the same purchase?",
+    "ground_truth": "Usually only one code per order unless a promotion explicitly allows stacking."
+  },
+  {
+    "question": "Do you have a rewards or loyalty program?",
+    "ground_truth": "Yes — members earn points on eligible purchases that can be redeemed for discounts later."
+  },
+  {
+    "question": "Where can I see my loyalty points?",
+    "ground_truth": "Log in and check the loyalty program section of your account for your balance."
+  },
+  {
+    "question": "Can I place a large bulk order?",
+    "ground_truth": "Yes, bulk orders may be possible — reach out to support or the sales team to discuss it."
+  },
+  {
+    "question": "How can I tell whether a product is currently available?",
+    "ground_truth": "Availability is shown on the product page and can change as orders come in."
+  },
+  {
+    "question": "Can I reserve something that is currently out of stock?",
+    "ground_truth": "No, but you can usually sign up for a back-in-stock notification instead."
+  },
+  {
+    "question": "Can I buy a product before its official release?",
+    "ground_truth": "Yes, if it's marked as available for preorder, you can order before its official release."
+  },
+  {
+    "question": "What does it mean when a product is described as limited edition?",
+    "ground_truth": "It means the product has restricted quantity or availability window and may not be restocked once sold out."
+  },
+
+  {
+    "question": "How do I leave a review for something I bought?",
+    "ground_truth": "Go to the product page and use the Write a Review option."
+  },
+  {
+    "question": "Where are the technical specifications for a product?",
+    "ground_truth": "They're listed in the details/specifications section of each product page."
+  },
+  {
+    "question": "Can you wrap an item as a gift?",
+    "ground_truth": "Yes, for eligible products, selectable at checkout for an extra fee."
+  },
+  {
+    "question": "Can I ship an order directly to someone else as a gift?",
+    "ground_truth": "Yes, just enter their address as the shipping address at checkout."
+  },
+  {
+    "question": "What are your customer support hours?",
+    "ground_truth": "Support operates during the company's published business hours, listed on the Contact Us page."
+  },
+  {
+    "question": "What should I do if my delivered package is missing?",
+    "ground_truth": "Check around your delivery location/with neighbors first, then contact support with tracking info if it's still missing."
+  },
+  {
+    "question": "What should I do if I notice suspicious activity on my account?",
+    "ground_truth": "Contact support immediately and change your password as a precaution."
+  },
+  {
+    "question": "Can I save products that I want to buy later?",
+    "ground_truth": "Yes, if a wishlist/favorites feature exists, you can save items to your account."
+  },
+  {
+    "question": "Do you have a physical store I can visit?",
+    "ground_truth": "This isn't covered by the FAQ content, so the pipeline should decline to answer rather than guess."
+  },
+  {
+    "question": "Can I pay using cryptocurrency?",
+    "ground_truth": "This isn't covered by the FAQ content, so the pipeline should decline to answer rather than guess."
+  },
+  {
+    "question": "Do you offer student discounts?",
+    "ground_truth": "This isn't covered by the FAQ content, so the pipeline should decline to answer rather than guess."
+  }
+  
+]

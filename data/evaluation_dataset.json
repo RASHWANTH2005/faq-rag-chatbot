@@ -1,0 +1,82 @@
+[
+  {
+    "user_input": "How can I create an account?",
+    "retrieved_contexts": [
+      "Question: How can I create an account?\nAnswer: Click the 'Sign Up' button on the website and follow the instructions to complete registration."
+    ],
+    "response": "Click the **'Sign Up'** button on the website and follow the instructions to complete registration.",
+    "reference": "You sign up through the Sign Up button on the site and complete the registration steps."
+  },
+  {
+    "user_input": "Can I place an order without creating an account?",
+    "retrieved_contexts": [
+      "Question: Can I place an order without creating an account?\nAnswer: Yes, you can place an order as a guest. Creating an account provides additional benefits such as easier order tracking and faster checkout."
+    ],
+    "response": "Yes, you can place an order as a guest.",
+    "reference": "Yes, guest checkout is allowed, though having an account gives perks like easier tracking and faster checkout."
+  },
+  {
+    "user_input": "I forgot my password. How do I get back into my account?",
+    "retrieved_contexts": [
+      "Question: How can I reset my password?\nAnswer: Click the 'Forgot Password' link on the login page and follow the instructions to reset your password."
+    ],
+    "response": "Click the **'Forgot Password'** link on the login page and follow the instructions to reset your password.",
+    "reference": "Use the Forgot Password link on the login page and follow the reset instructions."
+  },
+  {
+    "user_input": "Where can I change my personal account details?",
+    "retrieved_contexts": [
+      "Question: How can I change my email address?\nAnswer: Log in to your account and update your email address from Account Settings. You may be asked to verify the new email address."
+    ],
+    "response": "I don't know based on the available FAQs.",
+    "reference": "Log in, go to Account Settings, and edit your personal details there."
+  },
+  {
+    "user_input": "How is my personal information protected?",
+    "retrieved_contexts": [
+      "Question: Are my personal details secure?\nAnswer: We use security measures and industry-standard encryption to help protect your personal and account information."
+    ],
+    "response": "We use security measures and industry‑standard encryption to help protect your personal and account information.",
+    "reference": "Yes, industry-standard encryption and other security measures are used to protect account and personal info."
+  },
+  {
+    "user_input": "Which payment methods can I use?",
+    "retrieved_contexts": [
+      "Question: What payment methods do you accept?\nAnswer: We accept major credit cards, debit cards, and PayPal for online orders."
+    ],
+    "response": "We accept major credit cards, debit cards, and PayPal for online orders.",
+    "reference": "Major credit/debit cards and PayPal are accepted."
+  },
+  {
+    "user_input": "Why did my payment get rejected?",
+    "retrieved_contexts": [
+      "Question: Why was my payment declined?\nAnswer: A payment may be declined because of insufficient funds, incorrect card details, bank restrictions, or security checks. Contact your payment provider if the issue continues."
+    ],
+    "response": "A payment may be declined because of insufficient funds, incorrect card details, bank restrictions, or security checks. Contact your payment provider if the issue continues.",
+    "reference": "Declines usually come from insufficient funds, wrong card details, bank restrictions, or security checks; contact your payment provider if it keeps happening."
+  },
+  {
+    "user_input": "Can I change the payment method after placing an order?",
+    "retrieved_contexts": [
+      "Question: Can I change my payment method after ordering?\nAnswer: Payment methods generally cannot be changed after an order has been processed. Contact customer support as soon as possible to check whether an alternative arrangement is available."
+    ],
+    "response": "Payment methods generally cannot be changed after an order has been processed. Contact customer support as soon as possible to see if an alternative arrangement is available.",
+    "reference": "Usually not once the order is processed, but support can be contacted quickly to see if an exception is possible."
+  },
+  {
+    "user_input": "Where do I find the tracking information for my order?",
+    "retrieved_contexts": [
+      "Question: How can I track my order?\nAnswer: Log in to your account and open Order History to find the tracking information for your shipment."
+    ],
+    "response": "Log in to your account and open Order History to find the tracking information.",
+    "reference": "Log into your account and check Order History for tracking info."
+  },
+  {
+    "user_input": "How many days does normal shipping usually take?",
+    "retrieved_contexts": [
+      "Question: How long does standard shipping take?\nAnswer: Standard shipping usually takes 3 to 5 business days, depending on the destination."
+    ],
+    "response": "Standard shipping usually takes 3 to 5 business days, depending on the destination.",
+    "reference": "Roughly 3 to 5 business days depending on destination."
+  }
+]
